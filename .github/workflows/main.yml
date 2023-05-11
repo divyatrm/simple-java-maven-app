@@ -6,7 +6,8 @@ on:
     branches: 
       - master
 jobs:
+  call-workflow:
   # This workflow contains a single job called "build"
-  Build:
+  #Build:
     uses: divyatrm/pipeline/.github/workflows/main.yml@main
       
