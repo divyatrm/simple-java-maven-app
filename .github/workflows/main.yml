@@ -1,25 +1,12 @@
-name: Cross-Repo Build Workflow
+name: CI
+# Controls when the workflow will run on pushs
 on:
+  # Triggers the workflow on push or pull request events but only for the main branch 
   push:
-    branches:
+    branches: 
       - master
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo 1
-        uses: actions/checkout@v2
-        with:
-          repository: divyatrm/sample-java-app
-      - name: Checkout Repo 2
-        uses: actions/checkout@v2
-        with:
-          repository: divyatrm/simple-java-maven-app
-      - name: Set up Java environment
-        uses: actions/setup-java@v1
-        with:
-          java-version: '11'
-      - name: Build with Maven
-        run: mvn clean install
-      - name: Run tests with Maven
-        run: mvn test
+  # This workflow contains a single job called "build"
+  Build:
+    uses: https://github.com/divyatrm/pipeline/.github/workflows/main.yml@main
+      
