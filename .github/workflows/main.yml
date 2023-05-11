@@ -8,5 +8,5 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   Build:
-    uses: divyatrm/pipeline/blob/main/.github/workflows/main.yml@main
+    uses: divyatrm/pipeline/.github/workflows/main.yml@main
       
