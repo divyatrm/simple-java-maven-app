@@ -1,21 +1,8 @@
-name: Cross-Repo Build Workflow
+name: Main Workflow
 on:
   push:
     branches:
-      - master  
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo 1
-        uses: actions/checkout@v2
-        with:
-          repository: divyatrm/sample-java-app
-      - name: Checkout Repo 2
-        uses: actions/checkout@v2
-        with:
-          repository: divyatrm/simple-java-maven-app
-      - name: Build
-        run: |
-          echo $GITHUB_REPOSITORY
-          mvn clean install
+      - master 
+jobs:  
+  build:     
+     uses: divyatrm/pipeline/.github/workflows/main.yml@mai
