@@ -2,7 +2,7 @@ name: Cross-Repo Build Workflow
 on:
   push:
     branches:
-      - master
+      - master  
     paths:
       - sample-java-app
       - simple-java-maven-app
