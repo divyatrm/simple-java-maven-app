@@ -5,4 +5,4 @@ on:
       - master 
 jobs:  
   build:     
-     uses: divyatrm/pipeline/.github/workflows/main.yml@main
+     uses: divyatrm/pipeline/.github/workflows/build.yml@main
