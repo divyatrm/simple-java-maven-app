@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - master  
-    paths:
-      - sample-java-app
-      - simple-java-maven-app
 jobs:
   build:
     runs-on: ubuntu-latest
