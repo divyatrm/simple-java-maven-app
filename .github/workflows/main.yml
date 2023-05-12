@@ -10,11 +10,11 @@ jobs:
       - name: Checkout Repo 1
         uses: actions/checkout@v2
         with:
-          repository: divyatr/sample-java-app
+          repository: divyatrm/sample-java-app
       - name: Checkout Repo 2
         uses: actions/checkout@v2
         with:
-          repository: divyatr/simple-java-maven-app
+          repository: divyatrm/simple-java-maven-app
       - name: Build
         run: |
           echo $GITHUB_REPOSITORY
